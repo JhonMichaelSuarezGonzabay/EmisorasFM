@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Emisoras {
     double frecuencias=81.0;
-    int subir = 1;
-    int bajar = 2;
+
     
     public void subirVolumen() {
     	if(frecuencias>179.5) {
@@ -27,11 +26,7 @@ public class Emisoras {
     	}
     	menu();
     }
-    private void error() {
-		if(subir !=1 && bajar != 2);
-		System.out.println("OPCION NO ENCONTRADA");
-		
-    }
+
     	
     public void menu() {
 		System.out.println("QUE DESEA HACER\n");
@@ -45,13 +40,7 @@ public class Emisoras {
 		switch (opcion) {
 		case 1:subirVolumen();;break;
 		case 2:bajarVolumen();;break;	
-		case 3:error();;break;
-		case 4:error();;break;
-		case 5:error();;break;
-		case 6:error();;break;
-		case 7:error();;break;
-		case 8:error();;break;
-		case 9:error();;break;
+		default: System.out.println("OPCION INCORRECTA");break;
 		}		
 	}
 	
